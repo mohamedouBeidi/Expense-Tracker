@@ -11,6 +11,7 @@ body {
 @media (max-width: 768px) {
   .parent {
     width: 80%;
+    margin: 0 80px;
   }
   
 }
