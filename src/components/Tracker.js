@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import './tracker.css';
 const Tracker = () => {
     let [income, setIncome] = useState(0);
