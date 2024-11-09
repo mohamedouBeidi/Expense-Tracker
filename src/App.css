@@ -8,6 +8,12 @@ body {
   width: 40%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .parent {
+    width: 80%;
+  }
+  
+}
 ul {
   list-style-type: none;
   padding: 0;
