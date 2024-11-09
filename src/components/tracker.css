@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.child {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 3px 0.5px #121212;
+    gap: 10px;
+    padding: 10px;
+}
+.child h2 {
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+.child p {
+    font-size: 22px;
+    font-weight: 700;
+}
+.child .income p {
+    color: green;
+}
+.child .expense p {
+    color: red;
+}
+.parent h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: left;
+}
+.parent > p {
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 10px;
+}
+.history ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #777;
+    padding: 10px 5px;
+    position: relative;
+    border-radius: 5px;
+}
+.history ul li .skip {
+    position: absolute;
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+    left: -20px;
+    text-align: center;
+    background: #b12222;
+    border: 2px solid white;
+    color: white;
+    display: none;
+}
+.history ul li:hover .skip {
+    display: block;
+}
+.expense-border {
+    border-right: 4px solid rgb(173, 42, 42);
+}
+.income-border {
+    border-right: 4px solid rgb(60, 185, 48);
+}
+.parent form {
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+}
+.parent form input {
+    padding: 8px;
+    width: 100%;
+    font-size: 19px;
+    border: 1px solid #777;
+    margin-bottom: 10px;
+    outline: none;
+}
+.parent form label {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.parent form button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    background: blueviolet;
+    border: none;
+    color: white;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
