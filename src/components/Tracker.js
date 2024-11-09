@@ -6,7 +6,7 @@ const Tracker = () => {
     let [text, setText] = useState('');
     let [amount, setAmount] = useState(0);
     let [transactions, setTransactions] = useState([]);
-    let balance = income - expense;
+    let balance = income + expense;
     // function to handle the form submission
     const removeTransaction = (index) => {
         setTransactions(transactions.filter((item, i) => i !== index))
@@ -55,7 +55,7 @@ const Tracker = () => {
                         if(item.amount > 0){
                             return <li key={index} id="element" className="income-border"><p>{item.text}</p> <p>${item.amount}</p> <button className="skip" onClick={() => removeTransaction(index)}>x</button></li>
                         } else {
-                            return <li key={index} id="element" className="expense-border"><p>{item.text}</p> <p>${item.amount}</p> <button className='skip' onClick={() => removeTransaction(index)}>x</button></li>
+                            return <li key={index} id="element" className="expense-border"><p>{item.text}</p> <p>${Math.abs(item.amount)}</p> <button className='skip' onClick={() => removeTransaction(index)}>x</button></li>
                         }
                     })}
                 </ul>
